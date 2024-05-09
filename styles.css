@@ -1,0 +1,280 @@
+#website {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  background-color: white;
+}
+
+.hor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the header is above other elements */
+}
+
+.thirds {
+  width: 30%;
+  margin: 1%;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+}
+
+h2 {
+  font-size: 45px;
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #7d7d7d;
+  margin: 0px;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h5 {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #444444;
+  margin: 5px;
+}
+
+#name {
+  font-weight: 400;
+}
+
+#menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #7d7d7d;
+  line-height: 140%;
+}
+
+.portrait {
+  max-width: 80%;
+  border-radius: 10px;
+  height: auto;
+  object-fit: cover;
+}
+
+.logo {
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  color: #444444;
+  text-decoration: none;
+}
+
+.underline-hover:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.half-hor {
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer p {
+  color: #444444;
+}
+
+.inner-headings {
+  border: 0px solid #ddd;
+  overflow: hidden;
+  height: 140px;
+}
+
+.inner-headings span {
+  animation: animation 14s infinite ease;
+  position: relative;
+}
+
+.category {
+  height: 140px;
+}
+
+@keyframes animation {
+  0%,
+  20%,
+  100% {
+    top: 0px;
+  }
+  25%,
+  45% {
+    top: -140px;
+  }
+  50%,
+  70% {
+    top: -280px;
+  }
+  75%,
+  95% {
+    top: -420px;
+  }
+}
+
+.turquoise {
+  color: #85a59d;
+}
+
+.pink {
+  color: #f5cac4;
+}
+
+.coral {
+  color: #f28482;
+}
+
+.orange {
+  color: #f6bd60;
+}
+
+.photograph {
+  width: 32%;
+  margin: 0.66%;
+  border-radius: 10px;
+  height: auto;
+}
+
+#photos {
+  margin-top: 20px;
+}
+
+.case-card img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.case-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 20px lightgray;
+  border-radius: 10px 10px 10px 10px;
+  width: 48%;
+  margin: 1%;
+  flex-wrap: wrap;
+}
+
+.case-card h3 {
+  color: #444444;
+  font-family: "Lora", serif;
+  margin: 15px;
+}
+
+.tags {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.turquoise-tag {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #85a59d;
+  background-color: rgba(133, 165, 157, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.pink-tag {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #f5cac4;
+  background-color: rgba(245, 202, 196, 0.5);
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.coral-tag {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #f28482;
+  background-color: rgba(242, 132, 130, 0.5);
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.orange-tag {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #f6bd60;
+  background-color: rgba(246, 189, 96, 0.5);
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#work,
+#intro,
+#about-me,
+#photography {
+  margin-left: 10%;
+  margin-right: 10%;
+}

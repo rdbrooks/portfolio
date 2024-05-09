@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-columbia-road.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="website">
+    <header>
+      <h4 id="name"><a href="index.html" class="nav">Rachel Brooks</a></h4>
+      <div id="menu" class="hor">
+        <h4>
+          <a href="index.html#work" class="nav underline-hover">Work</a>
+        </h4>
+        <h4><a href="about.html" class="nav underline-hover">About</a></h4>
+        <h4>
+          <a
+            href="https://drive.google.com/file/d/1-x-WADHcw6J5_XtW3njB4A5UWETaZxLK/view?usp=sharing"
+            class="nav underline-hover"
+            target="_blank"
+            >Resume</a
+          >
+        </h4>
+      </div>
+    </header>
+    <div id="title">
+      <h1>Columbia Road Website Redesign</h1>
+    </div>
+    <div id="case">
+      <div>
+        <h2 class="underline-coral">Overview</h2>
+        <div id="top" class="hor">
+          <div id="overview">
+            <p>
+              The goal of this project was to redesign an existing website to
+              make it more usable, accessible and responsive across various
+              screen sizes (computer, tablet and mobile). I engaged in the
+              design process, from sketching to hi-fi mockups, and then used
+              HTML and CSS to code the interface!
+            </p>
+          </div>
+          <div id="summary">
+            <p class="text-coral">Role</p>
+            <p>UI/UX Designer and Front End Engineer</p>
+            <p class="text-coral">Timeline</p>
+            <p>February - March 2024</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="underline-coral">Problem</h2>
+        <p>
+          Visit the website
+          <a href="https://columbiaroad.info/" class="underline">here</a>!
+        </p>
+        <p class="text-coral">Why this website?</p>
+        <p>
+          Columbia Road, in London, is often bustling on Sundays with a flower
+          market and many local shops. However, I feel that the existing
+          Columbia Road website lacks visual hierarchy and is not intuitive to
+          use, which is unfortunate given the vibrant energy in this part of
+          London.
+        </p>
+        <p class="text-coral">Usability</p>
+        <ul>
+          <li><p>Little visual distinction between different sections</p></li>
+          <li>
+            <p>
+              Since the font weights and sizing are inconsistent in this part of
+              the website, it is difficult to find information quickly
+            </p>
+          </li>
+          <li>
+            <p>
+              Unclear what text and images are clickable since they looks
+              visually the same as the rest of the paragraphs and images
+            </p>
+          </li>
+          <li><p>Navigation bar is not sticky</p></li>
+          <li>
+            <p>
+              When resizing the interface, one of the shops disappears, yet
+              there is a space in its place. This can be confusing to users as
+              to why there is a discrepancy between different screen sizes.
+            </p>
+          </li>
+        </ul>
+        <p class="text-coral">Accessibility</p>
+        <ul>
+          <li>
+            <p>
+              Links hidden behind graphic elements (which may be confusing to
+              screenreaders)
+            </p>
+          </li>
+          <li>
+            <p>
+              When resizing the interface to tablet or mobile, one of the shop
+              images dissapears yet the link remains
+            </p>
+          </li>
+        </ul>
+        <div>
+          <h2 class="underline-coral">Sketches</h2>
+          <p>
+            I drew nine sketches to brainstorm the layouts, and then, I combined
+            my favorite elements of the speed sketches to make a final sketch.
+          </p>
+          <div class="hor-img">
+            <div>
+              <img
+                alt="9 speed sketches"
+                src="./assets/columbia-road/Speed-Sketches.jpg"
+              />
+            </div>
+            <div>
+              <img
+                alt="Final sketch"
+                src="./assets/columbia-road/Final-Sketch.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="underline-coral">Low Fidelity Wireframes</h2>
+        <p>
+          The wireframes below are annotated in red to show how my redesign
+          improves the previously mentioned usability and accessibility
+          problems.
+        </p>
+        <div class="hor-img">
+          <div>
+            <p>Computer:</p>
+            <img
+              alt="Low-fi wireframe for computer"
+              src="./assets/columbia-road/Low-Fi-Computer.jpg"
+            />
+          </div>
+          <div>
+            <p>Tablet:</p>
+            <img
+              alt="Low-fi wireframe for tablet"
+              src="./assets/columbia-road/Low-Fi-Tablet.jpg"
+            />
+          </div>
+          <div>
+            <p>Mobile:</p>
+            <img
+              alt="Low-fi wireframe for mobile"
+              src="./assets/columbia-road/Low-Fi-Mobile.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="underline-coral">Style Guide</h2>
+        <p>
+          My style guide allowed me to visualize the colors, fonts, icons and
+          effects of the website.
+        </p>
+        <img
+          id="style-guide"
+          alt="Style guide for website"
+          src="./assets/columbia-road/Style-Guide.jpg"
+        />
+      </div>
+      <div>
+        <h2 class="underline-coral">High Fidelity Wireframes</h2>
+        <p>
+          Using the style guide, I could bring the low-fidelity wireframe to
+          life as a high-fidelity mock up. During this process, I made revisions
+          to my sketches, low-fidelity wireframes and style guide when I wanted
+          to add or remove an element now that I could see the design with
+          styling.
+        </p>
+        <div class="hor-img">
+          <div>
+            <p>Computer:</p>
+            <img
+              alt="High-fi mock up for computer"
+              src="./assets/columbia-road/Hi-Fi-Computer.jpg"
+            />
+          </div>
+          <div>
+            <p>Tablet:</p>
+            <img
+              alt="High-fi mock up for tablet"
+              src="./assets/columbia-road/Hi-Fi-Tablet.jpg"
+            />
+          </div>
+          <div>
+            <p>Mobile:</p>
+            <img
+              alt="High-fi mock up for mobile"
+              src="./assets/columbia-road/Hi-Fi-Mobile.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="underline-coral">Website</h2>
+        <p>
+          You can visit my redesigned website
+          <a
+            href="https://rdbrooks.github.io/columbia-road-web-redesign/"
+            class="underline"
+            >here</a
+          >!
+        </p>
+        <p>
+          This project taught me a lot about the design process, and I hope to
+          continue using these practices when creating websites in the future.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p>Coded with love by Rachel Brooks © 2024</p>
+      <div id="icons">
+        <a href="https://www.linkedin.com/in/rachel-d-brooks/" target="_blank">
+          <img
+            alt="LinkedIn logo"
+            src="./assets/logos/linkedin.png"
+            class="logo"
+          />
+        </a>
+        <a href="https://github.com/rdbrooks" target="_blank">
+          <img alt="Github logo" src="./assets/logos/github.png" class="logo" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+#title {
+  background-color: rgba(133, 165, 157, 0.5);
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  border-radius: 10px;
+}
+#case {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.underline-turquoise {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgba(133, 165, 157, 0.5);
+  text-underline-offset: 10px;
+}
+
+#overview {
+  width: 65%;
+}
+
+#top {
+  justify-content: space-between;
+  width: 100%;
+}
+
+#summary {
+  width: 30%;
+}
+
+.text-turquoise {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #85a59d;
+  text-transform: uppercase;
+}
+
+.thirds {
+  width: 30%;
+  margin: 1%;
+}
+
+.center {
+  text-align: center;
+}
+
+li {
+  color: #85a59d;
+}
+
+.p-bold {
+  font-weight: 500;
+}
+
+#features p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#sketches img {
+  width: 49%;
+  margin: 0.5%;
+}
+
+#design-team {
+  width: 30%;
+}
+
+#design-team img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+#reflection {
+  width: 65%;
+  margin-right: 5%;
+}
