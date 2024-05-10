@@ -65,15 +65,16 @@ li {
   text-align: center;
 }
 
-.link:hover {
-  color: #f28482;
-}
-
 video {
   width: 100%;
   border-radius: 10px;
 }
 
+/*.underline-link:hover {
+  color: #f28482;
+}*/
+
 .underline-link {
   color: #f28482;
+  font-weight: 500;
 }
