@@ -39,7 +39,7 @@
       </div>
     </header>
     <div id="title">
-      <h1 class="">Collaboration Section Organizer</h1>
+      <h1 class="">Collaboration Hours Organizer</h1>
     </div>
     <div id="case">
       <div class="hor">
@@ -62,25 +62,79 @@
       </div>
       <div>
         <h2 class="underline-orange">Overview</h2>
-        <p>text</p>
+        <p>
+          I worked with a team to code a website to organize collaboration hours
+          (collab hours) for my software engineering course, and we presented a
+          demo of the final product to course staff. This project involved
+          creating a specification guide, conducting user research,
+          brainstorming features and implementing our solution. Specifically, I
+          oversaw user interviews, ethics evaluation, frontend and backend
+          integration and the implementation of a Firebase login system.
+        </p>
       </div>
       <h2 class="underline-orange">Problem</h2>
+      <p>
+        Every student in the software engineering course serves as a collab
+        partner once per week and helps other students debug their code.
+        However, collab hours are a little bit hectic, with the TAs trying to
+        call out names to pair students, while also trying to help students with
+        escalated issues. Also, we realized that there is large variety in how
+        collab hours are run and the partnering process. Some TAs assign a
+        debugging partner and others ask for volunteers to help. Finally, there
+        are many resources used in collaboration hours, but they are scattered
+        across various locations.
+      </p>
+      <p>
+        This project can ease this experience for students and TAs and make
+        collab hours more productive, organized and standardize it.
+      </p>
       <div id="user-research">
         <h2 class="underline-orange">User Research</h2>
+        <p class="text-orange">Questions</p>
+        <p>
+          To start, I conducted user research to understand the needs of
+          students and staff, which then shaped our project. Here are some of
+          the questions that I asked and my findings:
+        </p>
+        <ul>
+          <li>
+            <p>
+              What currently works and could be improved about collab section?
+            </p>
+          </li>
+          <li>
+            <p>What are the most important parts of collab section?</p>
+          </li>
+          <li>
+            <p>
+              As a *insert role*, what features are non-negotiable in an
+              application to facilitate collab hours?
+            </p>
+          </li>
+          <li>
+            <p>
+              As a *insert role*, what features would be nice but not necessary
+              in an application to facilitate collab hours?
+            </p>
+          </li>
+        </ul>
+        <p id="findings" class="text-orange">Findings</p>
         <div class="hor">
           <div class="third-text">
-            <p class="text-orange center">Students</p>
+            <p class="center"><b>Student</b></p>
             <ul>
               <li>
-                <p>Useful for students to learn to help each other</p>
+                <p>Useful skill for students to learn to help each other</p>
               </li>
               <li>
-                <p>Currently not effective for conceptual questions</p>
+                <p>
+                  Collab hours currently not effective for conceptual questions
+                </p>
               </li>
             </ul>
           </div>
           <div class="third-text">
-            <p class="text-orange center">Teaching Assistant</p>
+            <p class="center"><b>Teaching Assistant</b></p>
             <ul>
               <li>
                 <p>Debugging recipe works</p>
@@ -98,10 +152,17 @@
                   application
                 </p>
               </li>
+              <li>
+                <p>
+                  Students try to get TA help (escalated) before 15 min period
+                  -> Would love to see how long student claimed before
+                  escalation
+                </p>
+              </li>
             </ul>
           </div>
           <div class="third-text">
-            <p class="text-orange center">Professor</p>
+            <p class="center"><b>Professor</b></p>
             <ul>
               <li>
                 <p>
@@ -110,58 +171,191 @@
                 </p>
               </li>
               <li>
+                <p>Structure collab hours likely changing in future</p>
+              </li>
+              <li>
                 <p>
-                  Structure of collaboration section likely changing in future
+                  Collab hours successful because disrupts traditional format of
+                  CS hours (lots of bugs fixed and shorter lines)
                 </p>
               </li>
             </ul>
           </div>
         </div>
+        <p class="text-orange">Conclusions</p>
+        <p>
+          All of the users that we interviewed found value in the creation of an
+          application to facilitate and organize collab hours. However, we did
+          learn that the format of collab hours will likely be changing next
+          semester. Therefore, our code should be really well-documented and use
+          generic types as well as the strategy pattern where possible so it is
+          easy to modify in the future.
+        </p>
+        <p>
+          By using an algorithm to match partners, this will ensure that people
+          get equal opportunities to be debugging partners, which was a common
+          concern users had about how collab section currently works. Since
+          currently a TA does the matching, automating this will allow more
+          availability for escalation.
+        </p>
+        <p>
+          Another idea brought up numerous times during the stakeholder research
+          is a timer of how long students have been partnered. This lets
+          students know when they are able to escalate, and escalation will only
+          occur once the debugging form has been filled out and the necessary
+          time has elapsed. Many TAs expressed how many moving parts there are
+          to collab section, such as taking attendance, making pairings and
+          escalation, so having one system responsible for all of this will make
+          it easier for TAs.
+        </p>
+        <p>
+          Furthermore, attendance will be taken based on when the student logs
+          into the app, which will automate the process and allow TAs to see who
+          has logged in. The history will be automatically downloaded to a CSV
+          after a TA ends a session and this same CSV will be populated
+          everytime.
+        </p>
       </div>
-      <h2 class="underline-orange">Features</h2>
-      <div id="features">
-        <div class="feature">
-          <p class="center p-bold">Dashboards</p>
-          <p>Instructor; Help Requester; Debugging Partner</p>
-        </div>
-        <div class="feature">
-          <p class="center p-bold">Attendance</p>
-          <p>Automatically collected from login; Instructors can download</p>
-        </div>
-        <div class="feature">
-          <p class="center p-bold">Matching</p>
-          <p>
-            Based on help requester and debugging partner position in queue
-            (added to queue when login)
-          </p>
-        </div>
-        <div class="feature">
-          <p class="center p-bold">Debugging Form</p>
-          <p>Similar to Google form; Saves to CSV on backend</p>
-        </div>
-        <div class="feature">
-          <p class="center p-bold">Escalation</p>
-          <p>
-            Available after 15 minutes (timer); Displays on instructor dashboard
-          </p>
-        </div>
-        <div class="feature">
-          <p class="center p-bold">Removal</p>
-          <p>Remove debug partner or rematch/flag if partnered</p>
-        </div>
-        <div class="feature">
-          <p class="center p-bold">Type of Assistance</p>
-          <p>Ability to select whether debugging or conceptual question</p>
-        </div>
-        <div class="feature">
-          <p class="center p-bold">Security</p>
-          <p>
-            Login with Google; Automatically redirects to correct dashboard
-            (student vs instructor)
-          </p>
+      <div>
+        <h2 class="underline-orange">Features</h2>
+        <p>
+          These user interviews helped us brainstorm the key features which are
+          shown here:
+        </p>
+        <div id="features">
+          <div class="feature">
+            <p class="center p-bold">Dashboards</p>
+            <p>Instructor; Help Requester; Debugging Partner</p>
+          </div>
+          <div class="feature">
+            <p class="center p-bold">Attendance</p>
+            <p>Automatically collected from login; Instructors can download</p>
+          </div>
+          <div class="feature">
+            <p class="center p-bold">Matching</p>
+            <p>
+              Based on help requester and debugging partner position in queue
+              (added to queue when login)
+            </p>
+          </div>
+          <div class="feature">
+            <p class="center p-bold">Debugging Form</p>
+            <p>Similar to Google form; Saves to CSV on backend</p>
+          </div>
+          <div class="feature">
+            <p class="center p-bold">Escalation</p>
+            <p>
+              Available after 15 minutes (timer); Displays on instructor
+              dashboard
+            </p>
+          </div>
+          <div class="feature">
+            <p class="center p-bold">Removal</p>
+            <p>Remove debug partner or rematch/flag if partnered</p>
+          </div>
+          <div class="feature">
+            <p class="center p-bold">Type of Assistance</p>
+            <p>Ability to select whether debugging or conceptual question</p>
+          </div>
+          <div class="feature">
+            <p class="center p-bold">Security</p>
+            <p>
+              Login with Google; Automatically redirects to correct dashboard
+              (student vs instructor)
+            </p>
+          </div>
         </div>
       </div>
-      <h2 class="underline-orange">Website</h2>
+      <div>
+        <h2 class="underline-orange">Initial UI Sketches</h2>
+        <p>
+          We created initial UI sketches to visualize how the application would
+          look before programming it.
+        </p>
+        <div class="hor">
+          <div class="initial-ui">
+            <p>Login Page</p>
+            <img
+              alt="Mock up of login page"
+              src="./assets/collab/login-mock.png"
+            />
+          </div>
+          <div class="initial-ui">
+            <p>Student Role Choice:</p>
+            <img
+              alt="Mock up of select role page"
+              src="./assets/collab/select-role-mock.png"
+            />
+          </div>
+          <div class="initial-ui">
+            <p>Help Requester Selects Type of Issue:</p>
+            <img
+              alt="Mock up of select issue page for help requester"
+              src="./assets/collab/select-issue-mock.png"
+            />
+          </div>
+          <div class="initial-ui">
+            <p>Help Requester View</p>
+            <img
+              alt="Mock up of help requester view"
+              src="./assets/collab/help-requester-mock.png"
+            />
+          </div>
+          <div class="initial-ui">
+            <p>Debugging Partner View</p>
+            <img
+              alt="Mock up of debugging partner view"
+              src="./assets/collab/debugging-partner-mock.png"
+            />
+          </div>
+          <div class="initial-ui">
+            <p>Instructor View</p>
+            <img
+              alt="Mock up of instructor view"
+              src="./assets/collab/instructor-mock.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="underline-orange">Website</h2>
+        <p>Unfortunately, we were not able to deploy the website.</p>
+        <div class="hor">
+          <div class="initial-ui">
+            <p>Login Page</p>
+            <img alt="Login page" src="./assets/collab/login.png" />
+          </div>
+          <div class="initial-ui">
+            <p>Student Selects Role:</p>
+            <img alt="Select role page" src="./assets/collab/select-role.png" />
+          </div>
+          <div class="initial-ui">
+            <p>Help Requester Selects Type of Issue:</p>
+            <img
+              alt="Select issue page for help requester"
+              src="./assets/collab/select-issue.png"
+            />
+          </div>
+          <div class="initial-ui">
+            <p>Help Requester View</p>
+            <img
+              alt="Help requester view"
+              src="./assets/collab/help-requester.png"
+            />
+          </div>
+          <div class="initial-ui">
+            <p>Debugging Partner View</p>
+            <img
+              alt="Debugging partner view"
+              src="./assets/collab/debugging-partner.png"
+            />
+          </div>
+          <div class="initial-ui">
+            <p>Instructor View</p>
+            <img alt="Instructor view" src="./assets/collab/instructor.png" />
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <p>Coded with love by Rachel Brooks © 2024</p>

@@ -46,6 +46,7 @@ li {
 #sketches img {
   width: 49%;
   margin: 0.5%;
+  border-radius: 10px;
 }
 
 .wireframe-1 {
