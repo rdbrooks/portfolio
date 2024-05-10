@@ -31,7 +31,7 @@
 }
 
 li {
-  color: #7d7d7d;
+  color: #737373;
 }
 
 .p-bold {
@@ -59,12 +59,6 @@ li {
   width: 70%;
 }
 
-.underline {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-
 .third {
   width: 30%;
   margin: 1%;
@@ -77,4 +71,9 @@ li {
 
 video {
   width: 100%;
+  border-radius: 10px;
+}
+
+.underline-link {
+  color: #f28482;
 }

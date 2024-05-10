@@ -80,3 +80,16 @@ li {
   margin: 1%;
   text-align: center;
 }
+
+video {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.link:hover {
+  color: #85a59d;
+}
+
+.underline-link {
+  color: #85a59d;
+}

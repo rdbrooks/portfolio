@@ -57,7 +57,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #7d7d7d;
+  color: #737373;
   margin: 0px;
 }
 
@@ -92,7 +92,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #7d7d7d;
+  color: #737373;
   line-height: 140%;
 }
 
@@ -286,4 +286,10 @@ body {
 
 #coming-soon:hover {
   transform: none;
+}
+
+.underline-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
