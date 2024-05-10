@@ -66,27 +66,54 @@
           I worked with a team to code a website to organize collaboration hours
           (collab hours) for my software engineering course, and we presented a
           demo of the final product to course staff. This project involved
-          creating a specification guide, conducting user research,
-          brainstorming features and implementing our solution. Specifically, I
-          oversaw user interviews, ethics evaluation, frontend and backend
-          integration and the implementation of a Firebase login system.
+          creating a proposal, conducting user research, brainstorming features
+          and implementing our solution.
         </p>
+        <p>
+          Rather than having office hours, every student in the software
+          engineering course serves as a debugging partner every other week and
+          helps students debug their code. Here are some key terms to understand
+          this case study:
+        </p>
+        <ul>
+          <li>
+            <p>
+              <b>Collab hours</b>: Hours dedicated to students collaborating and
+              debugging code together, with TAs as facilitators
+            </p>
+          </li>
+          <li>
+            <p><b>Debugging Partner</b>: Student that helps to debug code</p>
+          </li>
+          <li>
+            <p><b>Help Requester</b>: Student that has bug</p>
+          </li>
+          <li>
+            <p><b>Instructor</b>: TA or professor</p>
+          </li>
+          <li>
+            <p>
+              <b>Escalation</b>: After 15 minutes, the pair can "escalate" the
+              issue and request help from a TA
+            </p>
+          </li>
+        </ul>
       </div>
       <h2 class="underline-orange">Problem</h2>
       <p>
-        Every student in the software engineering course serves as a collab
-        partner once per week and helps other students debug their code.
-        However, collab hours are a little bit hectic, with the TAs trying to
-        call out names to pair students, while also trying to help students with
-        escalated issues. Also, we realized that there is large variety in how
-        collab hours are run and the partnering process. Some TAs assign a
-        debugging partner and others ask for volunteers to help. Finally, there
-        are many resources used in collaboration hours, but they are scattered
-        across various locations.
+        Collab hours are <b>hectic</b>: the TAs call out names to pair students,
+        while also trying to help students with escalated issues. Also, we there
+        is
+        <b
+          >large variety in how collab hours are run and the partnering
+          process</b
+        >. Some TAs assign a debugging partner and others ask for volunteers to
+        help. Finally, there are many resources used in collaboration hours, but
+        the <b>tools are scattered across various locations</b>.
       </p>
       <p>
-        This project can ease this experience for students and TAs and make
-        collab hours more productive, organized and standardize it.
+        This project could ease this experience for students and instructors,
+        making collab hours more productive, organized and standardized.
       </p>
       <div id="user-research">
         <h2 class="underline-orange">User Research</h2>
@@ -94,7 +121,7 @@
         <p>
           To start, I conducted user research to understand the needs of
           students and staff, which then shaped our project. Here are some of
-          the questions that I asked and my findings:
+          the questions that I asked:
         </p>
         <ul>
           <li>
@@ -119,6 +146,10 @@
           </li>
         </ul>
         <p id="findings" class="text-orange">Findings</p>
+        <p>
+          All of the users that we interviewed found value in the creation of an
+          application to facilitate and organize collab hours.
+        </p>
         <div class="hor">
           <div class="third-text">
             <p class="center"><b>Student</b></p>
@@ -128,7 +159,14 @@
               </li>
               <li>
                 <p>
+                  TAs often busy with logistics, leading to longer wait times
+                  for escalation
+                </p>
+              </li>
+              <li>
+                <p>
                   Collab hours currently not effective for conceptual questions
+                  -> <i>option to specify if conceptual or bug</i>
                 </p>
               </li>
             </ul>
@@ -137,26 +175,26 @@
             <p class="center"><b>Teaching Assistant</b></p>
             <ul>
               <li>
-                <p>Debugging recipe works</p>
-              </li>
-              <li>
                 <p>
-                  Pairing process could be improved since some students debug
-                  multiple times while others don't
+                  Pairing process could be improved as some students debug
+                  multiple times while others don't ->
+                  <i>use algorithm to ensure equal opportunities</i>
                 </p>
               </li>
               <li>
                 <p>
-                  All TA duties (attendance, pairing, escalation) currently
-                  tracked on different platforms -> want one centralized
-                  application
+                  All TA duties (attendance, pairing, escalation) tracked on
+                  different platforms ->
+                  <i
+                    >create one centralized app and automate attendance and
+                    pairing</i
+                  >
                 </p>
               </li>
               <li>
                 <p>
-                  Students try to get TA help (escalated) before 15 min period
-                  -> Would love to see how long student claimed before
-                  escalation
+                  Students try to get TA help before 15 min period ->
+                  <i>timer of how long students have been partnered</i>
                 </p>
               </li>
             </ul>
@@ -171,7 +209,13 @@
                 </p>
               </li>
               <li>
-                <p>Structure collab hours likely changing in future</p>
+                <p>
+                  Structure of collab hours likely changing in future ->
+                  <i
+                    >code should be well-documented and use generic
+                    types/strategy pattern</i
+                  >
+                </p>
               </li>
               <li>
                 <p>
@@ -182,45 +226,12 @@
             </ul>
           </div>
         </div>
-        <p class="text-orange">Conclusions</p>
-        <p>
-          All of the users that we interviewed found value in the creation of an
-          application to facilitate and organize collab hours. However, we did
-          learn that the format of collab hours will likely be changing next
-          semester. Therefore, our code should be really well-documented and use
-          generic types as well as the strategy pattern where possible so it is
-          easy to modify in the future.
-        </p>
-        <p>
-          By using an algorithm to match partners, this will ensure that people
-          get equal opportunities to be debugging partners, which was a common
-          concern users had about how collab section currently works. Since
-          currently a TA does the matching, automating this will allow more
-          availability for escalation.
-        </p>
-        <p>
-          Another idea brought up numerous times during the stakeholder research
-          is a timer of how long students have been partnered. This lets
-          students know when they are able to escalate, and escalation will only
-          occur once the debugging form has been filled out and the necessary
-          time has elapsed. Many TAs expressed how many moving parts there are
-          to collab section, such as taking attendance, making pairings and
-          escalation, so having one system responsible for all of this will make
-          it easier for TAs.
-        </p>
-        <p>
-          Furthermore, attendance will be taken based on when the student logs
-          into the app, which will automate the process and allow TAs to see who
-          has logged in. The history will be automatically downloaded to a CSV
-          after a TA ends a session and this same CSV will be populated
-          everytime.
-        </p>
       </div>
       <div>
         <h2 class="underline-orange">Features</h2>
         <p>
-          These user interviews helped us brainstorm the key features which are
-          shown here:
+          These user interviews helped us brainstorm the key features of our
+          website, which are shown below.
         </p>
         <div id="features">
           <div class="feature">
@@ -240,28 +251,28 @@
           </div>
           <div class="feature">
             <p class="center p-bold">Debugging Form</p>
-            <p>Similar to Google form; Saves to CSV on backend</p>
+            <p>Embed on website; Saves to CSV on backend</p>
           </div>
           <div class="feature">
             <p class="center p-bold">Escalation</p>
             <p>
-              Available after 15 minutes (timer); Displays on instructor
-              dashboard
+              Available after 15 minutes (timer); Displays who is escalated on
+              instructor dashboard
             </p>
           </div>
           <div class="feature">
             <p class="center p-bold">Removal</p>
-            <p>Remove debug partner or rematch/flag if partnered</p>
+            <p>Ability to remove debug partner or rematch/flag if partnered</p>
           </div>
           <div class="feature">
             <p class="center p-bold">Type of Assistance</p>
-            <p>Ability to select whether debugging or conceptual question</p>
+            <p>Help requester can select whether bug or conceptual question</p>
           </div>
           <div class="feature">
             <p class="center p-bold">Security</p>
             <p>
-              Login with Google; Automatically redirects to correct dashboard
-              (student vs instructor)
+              Login with Google (firebase authentication); Automatically
+              redirects to correct dashboard
             </p>
           </div>
         </div>
@@ -269,8 +280,11 @@
       <div>
         <h2 class="underline-orange">Initial UI Sketches</h2>
         <p>
-          We created initial UI sketches to visualize how the application would
-          look before programming it.
+          We also created initial UI sketches to visualize the user flow and the
+          app's appearance before programming, aiming for a
+          <b>minimalistic and intuitive design</b>. This also allowed us to
+          consider the interaction between the front-end and back-end, such as
+          what happens when a button is clicked.
         </p>
         <div class="hor">
           <div class="initial-ui">
@@ -281,14 +295,14 @@
             />
           </div>
           <div class="initial-ui">
-            <p>Student Role Choice:</p>
+            <p>Student Role Choice</p>
             <img
               alt="Mock up of select role page"
               src="./assets/collab/select-role-mock.png"
             />
           </div>
           <div class="initial-ui">
-            <p>Help Requester Selects Type of Issue:</p>
+            <p>Help Requester Issue Selection</p>
             <img
               alt="Mock up of select issue page for help requester"
               src="./assets/collab/select-issue-mock.png"
@@ -319,18 +333,24 @@
       </div>
       <div>
         <h2 class="underline-orange">Website</h2>
-        <p>Unfortunately, we were not able to deploy the website.</p>
+        <p>
+          We coded the website over four weeks, dividing responsibilities based
+          on our strengths. I oversaw
+          <b>front-end and back-end integration</b> as well as the
+          <b>implementation of a Firebase login system</b>. This is what the
+          final website looks like:
+        </p>
         <div class="hor">
           <div class="initial-ui">
             <p>Login Page</p>
             <img alt="Login page" src="./assets/collab/login.png" />
           </div>
           <div class="initial-ui">
-            <p>Student Selects Role:</p>
+            <p>Student Role Choice</p>
             <img alt="Select role page" src="./assets/collab/select-role.png" />
           </div>
           <div class="initial-ui">
-            <p>Help Requester Selects Type of Issue:</p>
+            <p>Help Requester Issue Selection</p>
             <img
               alt="Select issue page for help requester"
               src="./assets/collab/select-issue.png"
@@ -355,6 +375,20 @@
             <img alt="Instructor view" src="./assets/collab/instructor.png" />
           </div>
         </div>
+      </div>
+      <div>
+        <h2 class="underline-orange">Reflections</h2>
+        <p>
+          I enjoyed engaging in the process of
+          <b>identifying a problem and then building a solution</b>. User
+          research was especially crucial to ensure that we addressed the needs
+          of all stakeholders involved. Ultimately, the group was successful
+          because of our
+          <b
+            >constant communication, strong organization and ability to ask each
+            other for help</b
+          >.
+        </p>
       </div>
     </div>
     <footer>
