@@ -53,7 +53,7 @@
   text-transform: uppercase;
 }
 
-.thirds {
+.third-text {
   width: 30%;
   margin: 1%;
 }
@@ -73,4 +73,10 @@ li {
 #features p {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.fourth {
+  width: 23%;
+  margin: 1%;
+  text-align: center;
 }

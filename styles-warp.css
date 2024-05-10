@@ -17,19 +17,6 @@
   text-underline-offset: 10px;
 }
 
-#overview {
-  width: 65%;
-}
-
-#top {
-  justify-content: space-between;
-  width: 100%;
-}
-
-#summary {
-  width: 30%;
-}
-
 .text-turquoise {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -37,11 +24,6 @@
   font-style: normal;
   color: #85a59d;
   text-transform: uppercase;
-}
-
-.thirds {
-  width: 30%;
-  margin: 1%;
 }
 
 .center {
@@ -66,6 +48,11 @@ li {
   margin: 0.5%;
 }
 
+#lo-fi img {
+  width: 49%;
+  margin: 0.5%;
+}
+
 #design-team {
   width: 30%;
 }
@@ -78,4 +65,18 @@ li {
 #reflection {
   width: 65%;
   margin-right: 5%;
+}
+
+.lo-fi-flow {
+  width: 100%;
+}
+
+.lo-fi-final {
+  width: 50%;
+}
+
+.fourth {
+  width: 23%;
+  margin: 1%;
+  text-align: center;
 }

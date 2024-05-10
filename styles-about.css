@@ -1,0 +1,10 @@
+.photograph {
+  width: 32%;
+  margin: 0.66%;
+  border-radius: 10px;
+  height: auto;
+}
+
+#photos {
+  margin-top: 20px;
+}

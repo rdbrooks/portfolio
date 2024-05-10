@@ -17,19 +17,6 @@
   text-underline-offset: 10px;
 }
 
-#overview {
-  width: 65%;
-}
-
-#top {
-  justify-content: space-between;
-  width: 100%;
-}
-
-#summary {
-  width: 30%;
-}
-
 .text-coral {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -76,4 +63,18 @@ li {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
+}
+
+.third {
+  width: 30%;
+  margin: 1%;
+  text-align: center;
+}
+
+.link:hover {
+  color: #f28482;
+}
+
+video {
+  width: 100%;
 }
