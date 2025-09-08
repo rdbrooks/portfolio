@@ -148,6 +148,18 @@ footer p {
   height: 140px;
 }
 
+@media screen and (max-width: 1200px) {
+  .inner-headings h3 {
+    font-size: 30px; /* or visibility: hidden; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inner-headings h3 {
+    font-size: 25px; /* or visibility: hidden; */
+  }
+}
+
 .inner-headings span {
   animation: animation 14s infinite ease;
   position: relative;
