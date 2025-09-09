@@ -96,9 +96,11 @@ p {
 }
 
 .portrait {
-  max-width: 80%;
+  width: 80%;
   border-radius: 10px;
   height: auto;
+  object-fit: cover;
+  max-height: 500px;
 }
 
 .logo {
