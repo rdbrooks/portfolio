@@ -21,6 +21,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  align-items: center;
 }
 
 .thirds {
@@ -80,11 +81,93 @@ h5 {
   font-weight: 400;
 }
 
-#menu {
+/*#menu {
   width: 50%;
   display: flex;
   justify-content: space-between;
+}*/
+
+/* Reset */
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+#menu li {
+  margin: 10px 0;
+}
+
+/* Default desktop */
+#menu {
+  display: flex;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none; /* hidden on desktop */
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+  #menu {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  #menu-links {
+    display: none; /* hidden until clicked */
+    flex-direction: column;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 10px 20px;
+  }
+
+  #menu-links.show {
+    display: flex;
+  }
+}
+
+/* Style nav links */
+#menu a {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #444444;
+  text-decoration: none;
+  padding: 20px;
+}
+
+/* Keep underline hover working */
+#menu a.underline-hover:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
+/* Remove list bullet */
+#menu-links li {
+  list-style: none;
+}
+/* --- */
 
 p {
   font-size: 20px;
@@ -304,4 +387,31 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
+}
+
+@media screen and (max-width: 700px) {
+  .case-card {
+    width: 100%;
+    margin: 10px 0; /* cleaner spacing for stacked layout */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #intro {
+    flex-direction: column; /* stack text above image */
+    align-items: center; /* optional: center everything */
+  }
+
+  .half-hor {
+    width: 100%; /* make text and image full width */
+  }
+
+  .image-container {
+    justify-content: center; /* center portrait when stacked */
+  }
+
+  .portrait {
+    width: 70%; /* smaller image on mobile */
+    max-height: none;
+  }
 }

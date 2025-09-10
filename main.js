@@ -18,3 +18,12 @@ function isInView(element) {
     window.innerHeight || document.documentElement.clientHeight;
   return rect.top <= windowHeight / 3;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const links = document.getElementById("menu-links");
+
+  toggle.addEventListener("click", () => {
+    links.classList.toggle("show");
+  });
+});
